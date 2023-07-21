@@ -1,0 +1,40 @@
+.list {
+  list-style: none;
+}
+
+.list__wrapp {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  background-color: #2c2c32;
+}
+
+.list__close-btn {
+  align-self: center;
+  margin-top: 35px;
+}
+
+.list__link {
+  display: inline-block;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background: none;
+  font-weight: 500;
+}
+
+.list__link:active {
+  color: #fcdb5c;
+  background: none;
+  text-decoration: underline;
+}

@@ -1,0 +1,21 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.section {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 23px;
+  padding-bottom: 23px;
+
+  background-color: #2c2c32;
+}
+
+@media (min-width: 992px) {
+  .section {
+    background-color: #ffffff;
+  }
+}

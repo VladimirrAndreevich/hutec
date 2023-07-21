@@ -1,0 +1,32 @@
+.list {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .list {
+    display: flex;
+    column-gap: 10px;
+  }
+
+  .list__item {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 10px;
+  }
+
+  .list__link {
+    color: inherit;
+  }
+}
+
+@media (min-width: 1100px) {
+  .list {
+    column-gap: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .list {
+    column-gap: 50px;
+  }
+}

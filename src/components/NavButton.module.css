@@ -1,0 +1,14 @@
+.button {
+  display: flex;
+  border-radius: 5px;
+  padding: 4px;
+
+  background-color: #fcdb5c;
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .button {
+    display: none;
+  }
+}
