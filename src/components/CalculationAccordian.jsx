@@ -25,7 +25,7 @@ const Accordion = styled((props) => (
 }));
 
 const AccordionSummary = styled((props) => <MuiAccordionSummary {...props} />)(
-  ({ theme, expanded }) => ({
+  ({ expanded }) => ({
     backgroundColor: expanded ? "rgba(173, 194, 42)" : "rgb(249, 249, 249)",
     borderRadius: "8px",
     padding: "19px 30px",

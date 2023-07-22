@@ -5,7 +5,7 @@ const CalculationSection = () => {
   return (
     <section className={styles.section}>
       <h2 className={styles.section__title}>Рaсчет стоимости строительства</h2>
-      <CalculationAccordian />
+      {/* <CalculationAccordian /> */}
     </section>
   );
 };
