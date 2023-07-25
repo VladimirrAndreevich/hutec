@@ -19,3 +19,9 @@
     background-color: #ffffff;
   }
 }
+
+@media (min-width: 992px) {
+  .header {
+    position: initial;
+  }
+}
