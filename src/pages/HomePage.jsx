@@ -5,6 +5,7 @@ import LocationSection from "../sections/LocationSection";
 import ConstructionStagesSection from "../sections/ConstructionStagesSection";
 import FactsSection from "../sections/FactsSection";
 import TechniqueSection from "../sections/TechniqueSection";
+import TestimonialsSection from "../sections/TestimonialsSection";
 
 const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage = () => {
       <ConstructionStagesSection />
       <FactsSection />
       <TechniqueSection />
+      <TestimonialsSection />
     </>
   );
 };

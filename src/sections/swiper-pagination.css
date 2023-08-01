@@ -1,7 +1,6 @@
-.swiper-pagination {
+.mySwiper .swiper-pagination {
   position: absolute;
-  left: 50%;
-  bottom: 8px !important;
+  --swiper-pagination-bottom: 8px;
 }
 
 .swiper-pagination-bullet {
