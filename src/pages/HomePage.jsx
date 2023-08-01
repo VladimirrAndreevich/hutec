@@ -4,6 +4,7 @@ import HeroSection from "../sections/HeroSection";
 import LocationSection from "../sections/LocationSection";
 import ConstructionStagesSection from "../sections/ConstructionStagesSection";
 import FactsSection from "../sections/FactsSection";
+import TechniqueSection from "../sections/TechniqueSection";
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <LocationSection />
       <ConstructionStagesSection />
       <FactsSection />
+      <TechniqueSection />
     </>
   );
 };
