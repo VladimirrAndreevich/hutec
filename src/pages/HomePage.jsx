@@ -6,6 +6,7 @@ import ConstructionStagesSection from "../sections/ConstructionStagesSection";
 import FactsSection from "../sections/FactsSection";
 import TechniqueSection from "../sections/TechniqueSection";
 import TestimonialsSection from "../sections/TestimonialsSection";
+import QuestionsSection from "../sections/QuestionsSection";
 
 const HomePage = () => {
   return (
@@ -18,6 +19,7 @@ const HomePage = () => {
       <FactsSection />
       <TechniqueSection />
       <TestimonialsSection />
+      <QuestionsSection />
     </>
   );
 };

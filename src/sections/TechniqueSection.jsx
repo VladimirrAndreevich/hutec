@@ -1,17 +1,16 @@
 import styled from "@emotion/styled";
 import { Container, useMediaQuery } from "@mui/material";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import block1 from '../assets/technique/block1.jpg'
-import block2 from '../assets/technique/block2.jpg'
-import block3 from '../assets/technique/block3.jpg'
-import block4 from '../assets/technique/block4.jpg'
+import { Swiper, SwiperSlide } from "swiper/react";
+import block1 from "../assets/technique/block1.jpg";
+import block2 from "../assets/technique/block2.jpg";
+import block3 from "../assets/technique/block3.jpg";
+import block4 from "../assets/technique/block4.jpg";
 
-import 'swiper/css';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/pagination";
 
-
-import { Pagination } from 'swiper/modules';
-import './swiper-pagination.css';
+import { Pagination } from "swiper/modules";
+import "./swiper-pagination.css";
 
 const MainSection = styled("section")(() => ({
   paddingTop: 50,
@@ -35,13 +34,12 @@ const Counter = styled("h2")(() => ({
     width: 170,
     textAlign: "end",
     fontSize: "44px",
-
   },
 }));
 const TitleWrapper = styled("div")(() => ({
   "@media (min-width: 992px)": {
     display: "flex",
-    flexDirection: 'row-reverse',
+    flexDirection: "row-reverse",
     justifyContent: "space-between",
   },
 }));
@@ -82,12 +80,9 @@ const MainTitle = styled("h2")(() => ({
 const SlideImg = styled("img")(() => ({
   width: "100%",
 
-
   "@media (min-width: 992px)": {
     clipPath: "polygon(5% 0, 100% 0%, 95% 100%, 0% 100%)",
   },
-
-
 }));
 const SlideWrapp = styled("div")(() => ({
   position: "absolute",
@@ -115,19 +110,16 @@ const SlideWrapp = styled("div")(() => ({
   "@media (max-width: 992px)": {
     ".swiper-slide-active &": {
       opacity: 1,
-    }
+    },
   },
-
-
 }));
 const SlideTitle = styled("h3")(() => ({
-
   fontSize: "25px",
   color: "#FCDB5C",
 
   "&:last-of-type": {
     marginBottom: 20,
-  }
+  },
 }));
 const SlideDescription = styled("p")(() => ({
   fontSize: "16px",
@@ -145,14 +137,19 @@ const TechniqueSection = () => {
           <div>
             <UnderTitle>техника, используемая ПСК НЬЮТЕК</UnderTitle>
             <Line />
-            <MainTitle>строительная техника для работ в нашей компании</MainTitle>
+            <MainTitle>
+              строительная техника для работ в нашей компании
+            </MainTitle>
           </div>
         </TitleWrapper>
       </Container>
 
-
       <Container maxWidth="xl" disableGutters={!isLargeScreen}>
-        <Swiper pagination={true} modules={[Pagination]} className="mySwiper" slidesPerView={1}
+        <Swiper
+          pagination={true}
+          modules={[Pagination]}
+          className="mySwiper"
+          slidesPerView={1}
           spaceBetween={10}
           breakpoints={{
             575: {
@@ -161,7 +158,8 @@ const TechniqueSection = () => {
             992: {
               slidesPerView: 4,
             },
-          }}>
+          }}
+        >
           <SwiperSlide>
             <SlideImg src={block1} alt="image"></SlideImg>
             <SlideWrapp>
@@ -169,7 +167,9 @@ const TechniqueSection = () => {
               <SlideTitle>бобкэт</SlideTitle>
               <SlideDescription>Ямобур</SlideDescription>
               <SlideDescription>Завинчивание свай</SlideDescription>
-              <SlideDescription>Доставка манипулятор эвакуатором</SlideDescription>
+              <SlideDescription>
+                Доставка манипулятор эвакуатором
+              </SlideDescription>
             </SlideWrapp>
           </SwiperSlide>
           <SwiperSlide>
@@ -179,7 +179,9 @@ const TechniqueSection = () => {
               <SlideTitle>бобкэт</SlideTitle>
               <SlideDescription>Ямобур</SlideDescription>
               <SlideDescription>Завинчивание свай</SlideDescription>
-              <SlideDescription>Доставка манипулятор эвакуатором</SlideDescription>
+              <SlideDescription>
+                Доставка манипулятор эвакуатором
+              </SlideDescription>
             </SlideWrapp>
           </SwiperSlide>
           <SwiperSlide>
@@ -189,7 +191,9 @@ const TechniqueSection = () => {
               <SlideTitle>бобкэт</SlideTitle>
               <SlideDescription>Ямобур</SlideDescription>
               <SlideDescription>Завинчивание свай</SlideDescription>
-              <SlideDescription>Доставка манипулятор эвакуатором</SlideDescription>
+              <SlideDescription>
+                Доставка манипулятор эвакуатором
+              </SlideDescription>
             </SlideWrapp>
           </SwiperSlide>
           <SwiperSlide>
@@ -199,12 +203,13 @@ const TechniqueSection = () => {
               <SlideTitle>бобкэт</SlideTitle>
               <SlideDescription>Ямобур</SlideDescription>
               <SlideDescription>Завинчивание свай</SlideDescription>
-              <SlideDescription>Доставка манипулятор эвакуатором</SlideDescription>
+              <SlideDescription>
+                Доставка манипулятор эвакуатором
+              </SlideDescription>
             </SlideWrapp>
           </SwiperSlide>
         </Swiper>
       </Container>
-
     </MainSection>
   );
 };
