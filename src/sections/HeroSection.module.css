@@ -93,6 +93,10 @@
   text-transform: uppercase;
 }
 
+.gift__mark {
+  display: none;
+}
+
 .gift__text {
   margin-top: 16px;
 
@@ -224,6 +228,7 @@
   }
 
   .gift__mark {
+    display: block;
     color: #2c2c32;
     font-family: "Raleway", sans-serif;
     font-size: 27px;
