@@ -7,6 +7,7 @@ import FactsSection from "../sections/FactsSection";
 import TechniqueSection from "../sections/TechniqueSection";
 import TestimonialsSection from "../sections/TestimonialsSection";
 import QuestionsSection from "../sections/QuestionsSection";
+import GiftSection from "../sections/GiftSection";
 
 const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage = () => {
       <Container maxWidth="lg">{/* <CalculationSection /> */}</Container>
       <LocationSection />
       <ConstructionStagesSection />
+      <GiftSection />
       <FactsSection />
       <TechniqueSection />
       <TestimonialsSection />

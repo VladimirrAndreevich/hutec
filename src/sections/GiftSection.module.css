@@ -1,0 +1,243 @@
+.main-wrapper {
+  padding-top: 66px;
+  padding-bottom: 27px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: #2c2c32;
+
+  background-image: url("../assets/backgrounds/giftBoxesBg.png");
+  background-position-x: right;
+  background-repeat: no-repeat;
+  background-blend-mode: lighten;
+}
+
+.under-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #a1a1a1;
+  text-transform: uppercase;
+}
+
+.separate-line {
+  height: 1px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #a1a1a1;
+}
+
+.main-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.info {
+  margin-top: 27px;
+}
+
+.info__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 41px;
+  color: #fcdb5c;
+  text-transform: uppercase;
+}
+.info__description {
+  margin-top: 20px;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #a1a1a1;
+  text-transform: uppercase;
+}
+.info__additional {
+  margin-top: 22px;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #a1a1a1;
+  text-transform: uppercase;
+}
+
+.request {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 26px;
+
+  padding-top: 36px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: #fcdb5c;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: #2c2c32;
+
+  text-align: center;
+}
+
+.request__count {
+  display: block;
+  padding: 10px 40px;
+
+  font-weight: 600;
+  font-size: 34px;
+  color: #fcdb5c;
+  text-transform: uppercase;
+
+  background-color: #2c2c32;
+}
+
+.request__title {
+  padding-left: 40px;
+  padding-right: 40px;
+
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 34px;
+  text-transform: uppercase;
+}
+
+.request__order {
+  font-weight: 700;
+  font-size: 18px;
+}
+.request__details {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.request__number {
+  font-weight: 600;
+  font-size: 26px;
+  color: #2c2c32;
+}
+
+.request__button {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 100%;
+  border: none;
+
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #2c2c32;
+  text-transform: uppercase;
+}
+
+@media (min-width: 432px) and (max-width: 640px) {
+  .request * {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 640px) {
+  .main-section {
+    display: flex;
+  }
+
+  .main-wrapper {
+    height: 100%;
+  }
+
+  .request {
+    max-width: 350px;
+  }
+}
+
+@media ((min-width: 640px) and (max-width: 730px)) {
+  .main-wrapper {
+    background-size: cover;
+  }
+}
+
+@media (min-width: 731px) {
+  .main-wrapper {
+    background-size: contain;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-section {
+    display: block;
+    padding-top: 100px;
+    padding-bottom: 210px;
+    margin-top: 50px;
+
+    background-image: url("../assets/backgrounds/giftSectionBg.jpg");
+    background-size: cover;
+  }
+
+  .main-wrapper {
+    position: relative;
+    display: flex;
+    height: initial;
+    padding: 70px 70px 80px 90px;
+
+    background-image: url("../assets/backgrounds/giftBoxesBgDesktop.png");
+    background-size: cover;
+    background-position-x: inherit;
+  }
+
+  .main-title {
+    font-size: 34px;
+  }
+
+  .wrapper {
+    max-width: 55%;
+  }
+
+  .request {
+    position: absolute;
+    right: 70px;
+    top: 122px;
+  }
+
+  .request__title {
+    padding-left: 25px;
+    padding-right: 25px;
+
+    font-size: 27px;
+  }
+  .request__order {
+    font-size: 21px;
+  }
+  .request__number {
+    font-size: 31px;
+  }
+
+  .info__description {
+    max-width: 520px;
+    margin-top: 0;
+
+    font-size: 34px;
+  }
+
+  .info__additional {
+    font-size: 16px;
+  }
+
+  .info {
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .wrapper {
+    max-width: 737px;
+  }
+
+  .main-section {
+    margin-top: 70px;
+  }
+}
