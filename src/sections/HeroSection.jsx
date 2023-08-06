@@ -48,7 +48,7 @@ const HeroSection = () => {
           </p>
           <p className={styles.gift__text}>
             Разрабатываем рабочую и проектную документацию на Ваше здание
-            <span>БЕСПЛАТНО</span>
+            <span> БЕСПЛАТНО</span>
           </p>
           <a href="tel:+70000000000" className={styles.gift__tel}>
             +7 (000) 000-00-00
