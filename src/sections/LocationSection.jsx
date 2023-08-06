@@ -68,6 +68,12 @@ const InfoWrapper = styled("div")(() => ({
   "@media (min-width: 665px)": {
     flexBasis: "40%",
   },
+  "@media (min-width: 1200px)": {
+    maxWidth: 435,
+  },
+  "@media (min-width: 1600px)": {
+    maxWidth: "initial",
+  },
 }));
 
 const MainTitle = styled("h2")(() => ({
@@ -146,7 +152,7 @@ const LocationSection = () => {
   return (
     <MainWrapper>
       <MainSection>
-        <MainContainer maxWidth="lg">
+        <MainContainer maxWidth="xl">
           <MapImage src={mapIcon} alt="map icon" />
 
           <InfoWrapper>
