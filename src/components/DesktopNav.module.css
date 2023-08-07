@@ -5,6 +5,12 @@
 @media (min-width: 992px) {
   .list__wrapper {
     display: block;
+
+    position: absolute;
+    z-index: 2;
+    bottom: -28px;
+    right: 0;
+    left: 0;
   }
 
   .list {
