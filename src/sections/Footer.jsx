@@ -114,7 +114,7 @@ const Rights = styled("p")(() => ({
   lineHeight: "26px",
   textAlign: "center",
 }));
-const CompanyInfo = styled("p")(() => ({
+const CompanyInfo = styled("div")(() => ({
   marginTop: 34,
 
   fontFamily: `"Raleway", sans-serif`,
