@@ -143,7 +143,13 @@ const DesktopList = styled("ul")(() => ({
   rowGap: 10,
 }));
 
-const MobileItem = styled("li")(() => ({}));
+const MobileItem = styled("li")(() => ({
+  "--offset-skey-x": "354deg",
+
+  "@media (min-width: 1200px)": {
+    "--offset-skey-x": "350deg",
+  },
+}));
 
 const MobileItemWrapper = styled("div")(({ isActive, maxWidth }) => ({
   display: "flex",
@@ -162,9 +168,37 @@ const MobileItemWrapper = styled("div")(({ isActive, maxWidth }) => ({
   transitionTimingFunction: "ease",
 
   "@media (min-width: 992px)": {
+    position: "relative",
     columnGap: 32,
     paddingRight: 32,
     maxWidth: maxWidth ? maxWidth : 300,
+
+    "&:after": {
+      content: "''",
+      position: "absolute",
+      // display: isActive ? "block" : "none",
+      top: 0,
+      bottom: 0,
+      right: -12,
+      width: 15,
+
+      opacity: isActive ? 1 : 0,
+      transition: `opacity ${duration.standard}ms ease`,
+
+      backgroundColor: "#2C2C32",
+      transform: "skewX(var(--offset-skey-x))",
+    },
+    "&:before": {
+      content: "''",
+      position: "absolute",
+      top: 0,
+      bottom: 0,
+      right: -8,
+      width: 15,
+
+      backgroundColor: "#ffffff",
+      transform: "skewX(var(--offset-skey-x))",
+    },
   },
 }));
 
@@ -354,7 +388,6 @@ const ConstructionStagesSection = () => {
       <DesktopList>
         {STAGES.map((stage) => {
           const isActiveItem = stage.id === activeItem;
-          console.log(stage.id);
 
           return (
             <MobileItem key={stage.id}>
