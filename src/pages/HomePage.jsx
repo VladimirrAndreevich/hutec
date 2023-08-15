@@ -1,4 +1,3 @@
-import CalculationSection from "../sections/CalculationSection";
 import HeroSection from "../sections/HeroSection";
 import LocationSection from "../sections/LocationSection";
 import ConstructionStagesSection from "../sections/ConstructionStagesSection";
@@ -12,11 +11,11 @@ const HomePage = () => {
   return (
     <>
       <HeroSection />
-      <CalculationSection />
-      <LocationSection />
+      {/* <CalculationSection /> */}
       <ConstructionStagesSection />
-      <GiftSection />
+      <LocationSection />
       <FactsSection />
+      <GiftSection />
       <TechniqueSection />
       <TestimonialsSection />
       <QuestionsSection />

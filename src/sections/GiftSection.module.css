@@ -200,7 +200,7 @@
   .request {
     position: absolute;
     right: 70px;
-    top: 122px;
+    /* top: 122px; */
   }
 
   .request__title {
