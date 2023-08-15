@@ -6,6 +6,7 @@ import TechniqueSection from "../sections/TechniqueSection";
 import TestimonialsSection from "../sections/TestimonialsSection";
 import QuestionsSection from "../sections/QuestionsSection";
 import GiftSection from "../sections/GiftSection";
+import MapSection from "../sections/MapSection";
 
 const HomePage = () => {
   return (
@@ -19,6 +20,7 @@ const HomePage = () => {
       <TechniqueSection />
       <TestimonialsSection />
       <QuestionsSection />
+      <MapSection />
     </>
   );
 };
