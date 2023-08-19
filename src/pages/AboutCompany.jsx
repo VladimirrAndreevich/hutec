@@ -1,5 +1,7 @@
+import ContactsSection from "../sections/ContactsSection";
+
 const AboutCompany = () => {
-  return <section></section>;
+  return <ContactsSection />;
 };
 
 export default AboutCompany;
