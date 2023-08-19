@@ -1,0 +1,124 @@
+.section {
+  padding-top: 54px;
+  padding-bottom: 32px;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  color: #383736;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: 645px) {
+    font-size: 32px;
+  }
+}
+
+.additional-info {
+  display: none;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  row-gap: 8px;
+  margin-top: 25px;
+
+  @media (min-width: 645px) {
+    column-gap: 8px;
+  }
+}
+
+.item {
+  max-width: 300px;
+  padding: 30px 18px 18px;
+
+  background-color: #f7f6f2;
+
+  @media (min-width: 645px) {
+    height: 322px;
+  }
+}
+
+.item:hover .img-wrapper {
+  background-color: #383736;
+}
+
+.img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 120px;
+  height: 120px;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  transition: background-color 0.34s ease;
+}
+
+.item__text {
+  margin-top: 30px;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #787878;
+  text-align: center;
+}
+
+.cart-svg {
+  transform: translateX(-4px);
+}
+
+@media (min-width: 1100px) {
+  .section {
+    padding-top: 82px;
+    padding-bottom: 94px;
+
+    background-image: url("../assets/backgrounds/benefits_bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .item {
+    border: 2px solid #dfddd4;
+    border-radius: 30px;
+    transition: border-color 0.34s ease;
+
+    &:hover {
+      border-color: #383736;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .list {
+    margin-top: 50px;
+
+    justify-content: space-around;
+  }
+
+  .title {
+    font-size: 41px;
+    text-transform: none;
+    text-align: left;
+  }
+
+  .additional-info {
+    display: block;
+    margin-top: 5px;
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #787878;
+    text-transform: uppercase;
+  }
+}
