@@ -6,6 +6,7 @@ import telegramIcon from "../assets/socials/telegram.svg";
 import whatsappIcon from "../assets/socials/whatsapp.svg";
 import yandexReviewIcon from "../assets/yandex_review.png";
 import locationIcon from "../assets/location.svg";
+import { NavLink } from "react-router-dom";
 
 const MainFooter = styled("footer")(() => ({
   backgroundColor: "#2C2C32",
@@ -46,7 +47,7 @@ const MainList = styled("ul")(() => ({
     columnGap: 40,
   },
 }));
-const NavLink = styled("a")(() => ({
+const NavigationLink = styled((props) => <NavLink {...props} />)(() => ({
   fontFamily: `"Raleway", sans-serif`,
   fontWeight: 700,
   fontSize: "14px",
@@ -149,22 +150,64 @@ const Footer = () => {
           <nav>
             <MainList>
               <li>
-                <NavLink href="#">Строительство</NavLink>
+                <NavigationLink
+                  style={({ isActive }) =>
+                    isActive ? { color: "#FCDB5C" } : undefined
+                  }
+                  to="/"
+                >
+                  Строительство
+                </NavigationLink>
               </li>
               <li>
-                <NavLink href="#">Производство</NavLink>
+                <NavigationLink
+                  style={({ isActive }) =>
+                    isActive ? { color: "#FCDB5C" } : undefined
+                  }
+                  to="/production"
+                >
+                  Производство
+                </NavigationLink>
               </li>
               <li>
-                <NavLink href="#">Проектирование</NavLink>
+                <NavigationLink
+                  style={({ isActive }) =>
+                    isActive ? { color: "#FCDB5C" } : undefined
+                  }
+                  to="/design"
+                >
+                  Проектирование
+                </NavigationLink>
               </li>
               <li>
-                <NavLink href="#">Услуги</NavLink>
+                <NavigationLink
+                  style={({ isActive }) =>
+                    isActive ? { color: "#FCDB5C" } : undefined
+                  }
+                  to="/services"
+                >
+                  Услуги
+                </NavigationLink>
               </li>
               <li>
-                <NavLink href="#">партнеры</NavLink>
+                <NavigationLink
+                  style={({ isActive }) =>
+                    isActive ? { color: "#FCDB5C" } : undefined
+                  }
+                  to="/partners"
+                >
+                  партнеры
+                </NavigationLink>
               </li>
               <li>
-                <NavLink href="#">О компании</NavLink>
+                <NavigationLink
+                  style={({ isActive }) =>
+                    isActive ? { color: "#FCDB5C" } : undefined
+                  }
+                  to="/about-company"
+                >
+                  О компании
+                </NavigationLink>
               </li>
             </MainList>
           </nav>

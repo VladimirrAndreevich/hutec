@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import style from "./DesktopNav.module.css";
 
 const DesktopNav = () => {
@@ -6,34 +6,70 @@ const DesktopNav = () => {
     <div className={style["list__wrapper"]}>
       <ul className={style.list}>
         <li>
-          <Link to="/" className={style["list__link"]}>
+          <NavLink
+            to="/"
+            className={style["list__link"]}
+            style={({ isActive }) =>
+              isActive ? { color: "#FCDB5C" } : undefined
+            }
+          >
             Строительство
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/" className={style["list__link"]}>
+          <NavLink
+            style={({ isActive }) =>
+              isActive ? { color: "#FCDB5C" } : undefined
+            }
+            to="/production"
+            className={style["list__link"]}
+          >
             Производство
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/" className={style["list__link"]}>
+          <NavLink
+            style={({ isActive }) =>
+              isActive ? { color: "#FCDB5C" } : undefined
+            }
+            to="/design"
+            className={style["list__link"]}
+          >
             Проектирование
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/" className={style["list__link"]}>
+          <NavLink
+            style={({ isActive }) =>
+              isActive ? { color: "#FCDB5C" } : undefined
+            }
+            to="/services"
+            className={style["list__link"]}
+          >
             Услуги
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/" className={style["list__link"]}>
+          <NavLink
+            style={({ isActive }) =>
+              isActive ? { color: "#FCDB5C" } : undefined
+            }
+            to="/partners"
+            className={style["list__link"]}
+          >
             партнеры
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/" className={style["list__link"]}>
+          <NavLink
+            style={({ isActive }) =>
+              isActive ? { color: "#FCDB5C" } : undefined
+            }
+            to="/about-company"
+            className={style["list__link"]}
+          >
             О компании
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </div>

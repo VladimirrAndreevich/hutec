@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import style from "./MobileNav.module.css";
 import close from "../assets/close.svg";
 
@@ -7,34 +7,76 @@ const MobileNav = ({ closeHandler }) => {
     <div className={style.list__wrapp}>
       <ul className={style.list}>
         <li>
-          <Link to="/" className={style["list__link"]}>
+          <NavLink
+            style={({ isActive }) =>
+              isActive ? { color: "#FCDB5C" } : undefined
+            }
+            to="/"
+            className={style["list__link"]}
+            onClick={closeHandler}
+          >
             Строительство
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/" className={style["list__link"]}>
+          <NavLink
+            style={({ isActive }) =>
+              isActive ? { color: "#FCDB5C" } : undefined
+            }
+            to="/production"
+            className={style["list__link"]}
+            onClick={closeHandler}
+          >
             Производство
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/" className={style["list__link"]}>
+          <NavLink
+            style={({ isActive }) =>
+              isActive ? { color: "#FCDB5C" } : undefined
+            }
+            to="/design"
+            className={style["list__link"]}
+            onClick={closeHandler}
+          >
             Проектирование
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/" className={style["list__link"]}>
+          <NavLink
+            style={({ isActive }) =>
+              isActive ? { color: "#FCDB5C" } : undefined
+            }
+            to="/services"
+            className={style["list__link"]}
+            onClick={closeHandler}
+          >
             Услуги
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/" className={style["list__link"]}>
+          <NavLink
+            style={({ isActive }) =>
+              isActive ? { color: "#FCDB5C" } : undefined
+            }
+            to="/partners"
+            className={style["list__link"]}
+            onClick={closeHandler}
+          >
             партнеры
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/" className={style["list__link"]}>
+          <NavLink
+            style={({ isActive }) =>
+              isActive ? { color: "#FCDB5C" } : undefined
+            }
+            to="/about-company"
+            className={style["list__link"]}
+            onClick={closeHandler}
+          >
             О компании
-          </Link>
+          </NavLink>
         </li>
       </ul>
       <img
