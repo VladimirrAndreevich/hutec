@@ -17,5 +17,9 @@ module.exports = {
       { allowConstantExport: true },
     ],
     "react/prop-types": "off",
+    "no-console": "warn",
+    "prefer-const": "warn",
+    "comma-dangle": ["error", "always-multiline"],
+    // semi: ["warn", "always"],
   },
 };
