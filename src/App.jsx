@@ -4,7 +4,6 @@ import ErrorPage from "./pages/ErrorPage";
 import HomePage from "./pages/HomePage";
 import ProductionPage from "./pages/ProductionPage";
 import DesignPage from "./pages/DesignPage";
-import ServicesPage from "./pages/ServicesPage";
 import PartnersPage from "./pages/PartnersPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import AboutCompany from "./pages/AboutCompany";
@@ -18,7 +17,6 @@ const router = createBrowserRouter([
       { index: true, element: <HomePage /> },
       { path: "production", element: <ProductionPage /> },
       { path: "design", element: <DesignPage /> },
-      { path: "services", element: <ServicesPage /> },
       { path: "partners", element: <PartnersPage /> },
       { path: "about-company", element: <AboutCompany /> },
 

@@ -1,0 +1,50 @@
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #383736;
+}
+
+.comeback {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #383736;
+  text-decoration: underline;
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 25px;
+  }
+  .comeback {
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .title {
+    font-size: 35px;
+  }
+  .comeback {
+    font-size: 25px;
+  }
+}
