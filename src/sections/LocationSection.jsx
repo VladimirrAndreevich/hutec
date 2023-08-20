@@ -5,6 +5,7 @@ import lightLogoIcon from "../assets/lightLogo.svg";
 import documentIcon from "../assets/documentIcon.svg";
 import bgUp from "../assets/backgrounds/geometric_blocks_shape_in_white_background.svg";
 import bgDown from "../assets/backgrounds/geometric_blocks_shape_in_white_background_down.svg";
+import catImg from "../assets/cat.jpg";
 
 const MainSection = styled("section")(() => ({
   position: "relative",
@@ -103,6 +104,7 @@ const ListItem = styled("li")(() => ({
 }));
 
 const DownloadLink = styled("a")(() => ({
+  position: "relative",
   display: "flex",
   alignItems: "center",
   marginTop: "30px",
@@ -111,6 +113,8 @@ const DownloadLink = styled("a")(() => ({
   fontWeight: 600,
   fontSize: "16px",
   color: "#FCDB5C",
+
+  zIndex: 2,
 }));
 
 const DownloadIcon = styled("img")(() => ({
@@ -170,7 +174,7 @@ const LocationSection = () => {
               </ListItem>
             </List>
 
-            <DownloadLink href="./assets/files/test.png" download>
+            <DownloadLink href={catImg} download>
               <DownloadIcon src={documentIcon} alt="document icon" />
               Скачать референс лист
             </DownloadLink>
