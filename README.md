@@ -1,1 +1,1 @@
-[Сайт проекта](https://hutec-68b5c.web.app/){:target="\_blank"}
+<a href="https://www.example.com" target="_blank">Сайт проекта</a>
