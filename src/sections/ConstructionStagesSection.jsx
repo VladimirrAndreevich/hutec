@@ -90,7 +90,7 @@ const STAGES = [
 const MainSection = styled("section")(() => ({
   display: "flex",
   flexDirection: "column",
-  paddingTop: 30,
+  paddingTop: 60,
   paddingBottom: 25,
 }));
 
@@ -309,7 +309,7 @@ const CounteButton = styled("button")(() => ({
   backgroundColor: "transparent",
   border: "none",
   // clipPath: "polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%)",
-
+  zIndex: 2,
   "&:before": {
     content: "''",
     position: "absolute",
